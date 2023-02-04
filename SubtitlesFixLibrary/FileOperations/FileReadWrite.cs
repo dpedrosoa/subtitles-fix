@@ -14,7 +14,7 @@ namespace SubtitlesFixLibrary.FileOperations
         /// Reads all the subtitles in a file
         /// </summary>
         /// <param name="filePath">
-        ///     The path of the file to read
+        ///     The path of the file to read including filename and extension
         /// </param>
         /// <returns>
         ///     The list of subtitles of type SubtitleModel
@@ -103,7 +103,7 @@ namespace SubtitlesFixLibrary.FileOperations
         ///     The list subtitles to write in the file
         /// </param>
         /// <param name="filePath">
-        ///     The path of the file to write
+        ///     The path of the file to write including file name and extension
         /// </param>
         public static void WriteAllSubtitles(List<SubtitleModel> subtitles, string filePath)
         {
