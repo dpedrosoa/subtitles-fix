@@ -66,12 +66,22 @@ namespace SubtitlesFixUI
             {
                 if(newFileDetail != null)
                 {
-                    //List<SubtitleModel> subtitles = FileReadWrite.ReadSubtitles(fileTextBox.Text);
-                    //FileReadWrite.WriteAllSubtitles(subtitles, newFileDetail.FullPathName);
+                    List<SubtitleModel> subtitles = FileReadWrite.ReadSubtitles(fileTextBox.Text);
+                    bool result = FileReadWrite.WriteAllSubtitles(subtitles, newFileDetail.FullPathName);
 
-                    MessageBox.Show(
-                        $"Subtitles are fixed and saved to the new file: {newFileDetail.FullPathName}",
-                        "Subtitles fixed!");
+                    if(result)
+                    {
+                        MessageBox.Show(
+                            $"Subtitles are fixed and saved to the new file: {newFileDetail.FullPathName}",
+                            "Subtitles fixed!");
+                    }
+                    else
+                    {
+                        MessageBox.Show(
+                            $"Error fixing subtitles.",
+                            "ERROR");
+                    }
+                    
                     ClearForm();
                 }
                 else

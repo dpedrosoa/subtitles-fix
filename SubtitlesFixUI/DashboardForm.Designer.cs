@@ -127,9 +127,9 @@
             this.selectNewFileLabel.Location = new System.Drawing.Point(30, 285);
             this.selectNewFileLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.selectNewFileLabel.Name = "selectNewFileLabel";
-            this.selectNewFileLabel.Size = new System.Drawing.Size(370, 30);
+            this.selectNewFileLabel.Size = new System.Drawing.Size(660, 30);
             this.selectNewFileLabel.TabIndex = 9;
-            this.selectNewFileLabel.Text = "New file name to write fixed subtitles";
+            this.selectNewFileLabel.Text = "New file name to write fixed subtitles (override if file already exists)";
             // 
             // fixButton
             // 

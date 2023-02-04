@@ -97,7 +97,8 @@ namespace SubtitlesFixLibrary.FileOperations
 
 
         /// <summary>
-        /// Writes all the subtitles in the list to a file
+        /// Writes all the subtitles in the list to a file. 
+        /// Overridess the file if it already exists.
         /// </summary>
         /// <param name="subtitles">
         ///     The list subtitles to write in the file
@@ -105,26 +106,36 @@ namespace SubtitlesFixLibrary.FileOperations
         /// <param name="filePath">
         ///     The path of the file to write including file name and extension
         /// </param>
-        public static void WriteAllSubtitles(List<SubtitleModel> subtitles, string filePath)
+        public static bool WriteAllSubtitles(List<SubtitleModel> subtitles, string filePath)
         {
-            Console.WriteLine("-----------------------------");
-            Console.WriteLine("Opening file: " + filePath);
-
-            StreamWriter writer = new StreamWriter(filePath);
-            Console.WriteLine("Writing file.");
-
-            foreach (SubtitleModel subtitle in subtitles)
+            try
             {
-                writer.WriteLine(subtitle.Id);
-                writer.WriteLine(subtitle.GetTimeString());
-                foreach (var text in subtitle.Text)
+                Console.WriteLine("-----------------------------");
+                Console.WriteLine("Opening file: " + filePath);
+
+                StreamWriter writer = new StreamWriter(filePath);
+                Console.WriteLine("Writing file.");
+
+                foreach (SubtitleModel subtitle in subtitles)
                 {
-                    writer.WriteLine(text);
+                    writer.WriteLine(subtitle.Id);
+                    writer.WriteLine(subtitle.GetTimeString());
+                    foreach (var text in subtitle.Text)
+                    {
+                        writer.WriteLine(text);
+                    }
                 }
+                writer.Close();
+                Console.WriteLine("Finish writing all subtitles.");
+                Console.WriteLine("-----------------------------");
+
+                return true;
             }
-            writer.Close();
-            Console.WriteLine("Finish writing all subtitles.");
-            Console.WriteLine("-----------------------------");
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw ex;
+            }
 
         }
     }
