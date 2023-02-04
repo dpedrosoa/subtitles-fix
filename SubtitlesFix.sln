@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubtitlesFixLibrary", "Subt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubtitleFixConsole", "SubtitleFixConsole\SubtitleFixConsole.csproj", "{F78F6CCA-EA06-41C7-9A38-FEF75FE09699}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubtitlesFixUI", "SubtitlesFixUI\SubtitlesFixUI.csproj", "{9B3400B0-7C7C-4FCA-B7CF-95B7D873D461}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F78F6CCA-EA06-41C7-9A38-FEF75FE09699}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F78F6CCA-EA06-41C7-9A38-FEF75FE09699}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F78F6CCA-EA06-41C7-9A38-FEF75FE09699}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B3400B0-7C7C-4FCA-B7CF-95B7D873D461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B3400B0-7C7C-4FCA-B7CF-95B7D873D461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B3400B0-7C7C-4FCA-B7CF-95B7D873D461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B3400B0-7C7C-4FCA-B7CF-95B7D873D461}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
