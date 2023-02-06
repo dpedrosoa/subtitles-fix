@@ -72,14 +72,18 @@ namespace SubtitlesFixUI
                     if(result)
                     {
                         MessageBox.Show(
-                            $"Subtitles are fixed and saved to the new file: {newFileDetail.FullPathName}",
-                            "Subtitles fixed!");
+                            $"Subtitles are fixed and saved to the new file: \n{newFileDetail.FullPathName}",
+                            "Subtitles fixed!",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
                     }
                     else
                     {
                         MessageBox.Show(
                             $"Error fixing subtitles.",
-                            "ERROR");
+                            "ERROR",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error);
                     }
                     
                     ClearForm();
