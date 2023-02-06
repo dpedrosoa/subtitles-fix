@@ -1,6 +1,6 @@
 # Subtitles Fix application
 This is an application that fixes the subtitles time duration 
-from a file with format SubRipper (.srt) or (.txt).
+from a file with format SubRip (.srt) or (.txt).
 
 The solution is designed with a Class Library that holds the logic of the application.
 It has a Windows Forms application for the user interface and a Console application 
