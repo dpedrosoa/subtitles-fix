@@ -35,6 +35,10 @@ to be equal to the second subtitle start time (00:00:13,030)
 	00:00:10,159 --> 00:00:13,030
 	The people in the back,
 	can you hear me clearly?
+
+	3
+	00:00:13,030 --> 00:00:14,030
+	OK, good.
 </pre>
 
 
