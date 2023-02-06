@@ -54,6 +54,10 @@ namespace SubtitlesFixLibrary.Helper
             {
                 timeString = timeString.Substring(0, timeString.Length - 4);
             }
+            else
+            {
+                timeString += ",000";
+            }
             return timeString;
         }
     }
