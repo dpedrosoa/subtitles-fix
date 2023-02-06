@@ -97,7 +97,11 @@
             this.selectFileLabel.Name = "selectFileLabel";
             this.selectFileLabel.Size = new System.Drawing.Size(325, 30);
             this.selectFileLabel.TabIndex = 5;
-            this.selectFileLabel.Text = "Select subtitle file to fix (.txt, .srt)";
+            this.selectFileLabel.Text = "Select subtitle file to fix (.srt, .txt)";
+            // 
+            // openFileDialog
+            // 
+            this.openFileDialog.Filter = "Subtitle files (*.srt)|*.srt|Text files (*.txt)|*.txt";
             // 
             // newFileLabel
             // 
@@ -114,11 +118,11 @@
             // 
             this.newFileNameTextBox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.newFileNameTextBox.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.newFileNameTextBox.Location = new System.Drawing.Point(191, 333);
+            this.newFileNameTextBox.Location = new System.Drawing.Point(197, 333);
             this.newFileNameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.newFileNameTextBox.Name = "newFileNameTextBox";
             this.newFileNameTextBox.ReadOnly = true;
-            this.newFileNameTextBox.Size = new System.Drawing.Size(496, 34);
+            this.newFileNameTextBox.Size = new System.Drawing.Size(493, 34);
             this.newFileNameTextBox.TabIndex = 10;
             // 
             // selectNewFileLabel
